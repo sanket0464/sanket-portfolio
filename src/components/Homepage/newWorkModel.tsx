@@ -20,8 +20,8 @@ const Section = ({
   order,
 }: Props) => {
   return (
-    <div className="sm:rounded-[32px] border border-[#424242] w-full p-4 pl-12 flex bg-black justify-between relative overflow-hidden gap-4">
-      <div className="flex flex-col justify-between max-w-[330px] ">
+    <div className="sm:rounded-[32px] border border-[#424242] w-full p-4 pl-8 flex bg-black justify-between relative overflow-hidden gap-4">
+      <div className="flex flex-col justify-between max-w-[330px] pt-2 pb-2">
         <div className="flex flex-col gap-[32px] z-10">
           <p className="font-light text-base text-white">
             {order} • {appType}

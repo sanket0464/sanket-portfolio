@@ -8,18 +8,21 @@ const Footer = () => {
             I do magic in pixels...
           </p>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-w-[640px]">
           <p className="font-semibold text-[32px] text-white text-center sm:text-left">
             Ready to kickstart your project with a touch of magic?
           </p>
           <p className="font-light text-[#A4A4A4] text-center sm:text-left">
-            Looking for someone who turns ideas into experiences? Let’s
-            collaborate to create designs that not only look great but also
-            deliver real value.
+            Let’s collaborate to create designs that not only look great but
+            also deliver real value.
           </p>
-          <div className="flex gap-1 bg-[#FFB800] py-2.5 px-6 rounded-2xl w-max items-center mx-auto sm:mx-0">
+          <div className="flex gap-1 sm:gap-3 bg-[#FFB800] py-4 px-6 rounded-2xl w-max items-center mx-auto sm:mx-0 hover-gradient active:sm:gap-1 active:sm:px-4">
             <p className="font-semibold text-lg text-[#141414]">Let's Talk</p>
-            <img src="/icons/arrow-top-black.svg" alt="" />
+            <img
+              src="/icons/arrow-top-black.svg"
+              alt=""
+              className="rotate-90"
+            />
           </div>
         </div>
       </div>

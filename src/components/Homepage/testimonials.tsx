@@ -32,8 +32,8 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="sm:py-20 flex flex-col gap-[112px] justify-center items-center bg-[#FFFDF8]">
-      <div className="flex flex-col gap-7 sm:gap-[140px]">
-        <div className="flex flex-col sm:gap-8 gap-7 text-center">
+      <div className="flex flex-col gap-7 sm:gap-[80px]">
+        <div className="flex flex-col sm:gap-6 gap-5 text-center">
           <p className="font-semibold sm:text-black sm:text-[32px] text-[24px] leading-[120%]">
             What others have to say
           </p>
@@ -43,7 +43,7 @@ const Testimonials = () => {
         </div>
         <div className="max-w-[350px] bg-[#FFFDF8] sm:hidden flex">
           <Swiper
-            spaceBetween={20} // Optional: space between slides
+            // spaceBetween={20} // Optional: space between slides
             grabCursor={true}
             slidesPerView="auto"
             centeredSlides={true}
@@ -63,7 +63,7 @@ const Testimonials = () => {
             ))}
           </Swiper>
         </div>
-        <div className="max-w-[1200px] bg-[#FFFDF8] hidden sm:flex">
+        <div className="max-w-[1200px] bg-[#FFFDF8] hidden sm:flex w-fit">
           <Swiper
             spaceBetween={20} // Optional: space between slides
             grabCursor={true}

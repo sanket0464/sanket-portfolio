@@ -27,3 +27,13 @@
 .hover-gradient:hover {
   background: linear-gradient(180deg, #ffdc83 0%, #ffb800 64.17%);
 }
+
+.swiper .swiper-initialized .swiper-horizontal {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+}
+
+.swiper-slide {
+  width: fit-content !important;
+}

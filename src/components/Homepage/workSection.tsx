@@ -68,8 +68,8 @@ export default function SelectedWork({ ref }: Props) {
   }, [activeIndex]);
 
   return (
-    <div className="bg-black pt-16 flex flex-col gap-[66px] sm:gap-[120px]">
-      <div className="justify-center flex items-center flex-col md:gap-[32px] gap-5">
+    <div className="bg-black pt-20 flex flex-col gap-[66px] sm:gap-[120px]">
+      <div className="justify-center flex items-center flex-col sm:gap-[28px] gap-5">
         <p className="font-semibold text-2xl md:text-[32px] text-white">
           Selected work
         </p>
@@ -125,7 +125,7 @@ export default function SelectedWork({ ref }: Props) {
     //     </div> */}
       {/* //   </div> */}
       {/* // </div> */}
-      <div className="w-full px-[120px] py-[120px]  flex-col gap-[100px] hidden sm:flex">
+      <div className="w-full px-[120px] sm:pb-[120px] flex-col gap-[100px] hidden sm:flex">
         {projects.map((project) => (
           <Section
             key={project.title}
