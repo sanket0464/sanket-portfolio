@@ -16,7 +16,7 @@ const Navbar = ({ aboutRef, infoRef, workRef }: Props) => {
   };
 
   return (
-    <div className=" top-0 left-0 w-full z-50 bg-white shadow-md px-4 sm:px-[120px] py-3 h-[56px] sm:h-[70px] border-b border-gray-200 relative">
+    <div className=" top-0 left-0 w-full bg-white shadow-md px-4 sm:px-[120px] py-3 h-[56px] sm:h-[70px] border-b border-gray-200 z-[100]  sticky">
       {/* Mobile Navbar */}
       <div className="sm:hidden flex items-center justify-between h-full">
         <img src="/logos/logo.svg" alt="Logo" className="h-full w-auto" />

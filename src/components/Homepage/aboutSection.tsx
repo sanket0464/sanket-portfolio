@@ -6,13 +6,13 @@ interface Props {
 const AboutSection = ({ ref }: Props) => {
   return (
     <div
-      className="bg-[#101010]  bg-[url('/images/background-about-mobile.svg')] sm:bg-[url('/images/background-about-desktop.svg')] bg-cover bg-no-repeat flex flex-col  aspect-[1440/933] py-[40px] sm:py-0 gap-[60px] justify-evenly"
+      className="bg-[#101010]  bg-[url('/images/background-about-mobile.svg')] sm:bg-[url('/images/background-about-desktop.svg')] bg-cover bg-no-repeat flex flex-col  py-[40px] sm:py-0 gap-[60px] sm:gap-0 justify-between sm:justify-normal"
       ref={ref}
     >
       <div className="flex w-full sm:flex-row flex-col-reverse gap-[70px] sm:gap-0 px-[16px] py-[16px] sm:justify-between">
-        <div className="sm:w-1/2 sm:max-w-[750px] flex flex-col gap-10 text-center sm:text-left sm:pl-[80px] sm:pt-[80px]">
-          <p className="text-[#FFFFFF] text-[32px] font-semibold sm:block hidden">
-            About me
+        <div className="sm:w-1/2 sm:max-w-[750px] flex flex-col gap-5 text-center sm:text-left sm:pl-[80px] sm:py-[80px]">
+          <p className="text-[#FFFFFF] text-[32px] font-semibold sm:block hidden h-fit">
+            About Me
           </p>
           <div className="flex flex-col gap-6">
             <p className="font-light text-white">
@@ -37,7 +37,7 @@ const AboutSection = ({ ref }: Props) => {
             ].map(({ icon, text }, idx) => (
               <div
                 key={idx}
-                className="bg-[#202020] border border-[#292929] rounded-lg p-2 sm:px-3 sm:py-[17px] flex items-center gap-1 text-xs sm:text-base  sm:h-fit shrink-0"
+                className="bg-[#202020] border border-[#292929] rounded-lg p-2 sm:px-3 sm:py-[12px] flex items-center gap-1 text-xs sm:text-base  sm:h-fit shrink-0"
               >
                 <img src={icon} alt="" className="w-5 h-5 object-contain" />
                 <p className="font-medium text-sm text-white">{text}</p>
@@ -71,7 +71,7 @@ const AboutSection = ({ ref }: Props) => {
         </div>
       </div>
 
-      <div className="flex sm:gap-[40px] gap-[42px] flex-col sm:px-[80px] ">
+      <div className="flex sm:gap-[60px] gap-[42px] flex-col sm:px-[80px]0 sm:pb-[64px] ">
         <div className="flex justify-center gap-2">
           <img src="/icons/star.svg" alt="" />
           <p className="bg-gradient-to-r from-[#FFB800] to-[#FFFFFF] bg-clip-text text-transparent">

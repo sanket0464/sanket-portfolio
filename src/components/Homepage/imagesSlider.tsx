@@ -27,9 +27,9 @@ const ImageSlider = ({ images }: Props) => {
   return (
     <div className="overflow-hidden" ref={emblaRef}>
       <div className="flex gap-8">
-        {images.map((image: any) => (
+        {images.map((image: any, index) => (
           <div
-            key={image.url}
+            key={index}
             className="w-[204px] h-[245px] flex-shrink-0 rounded-xl shadow-lg border-[#1C1C1C] border-[6px] drop-shadow-2xl"
           >
             <img

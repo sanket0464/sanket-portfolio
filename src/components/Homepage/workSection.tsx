@@ -9,7 +9,7 @@ const projects = [
   {
     title: "MeterScan",
     order: "01",
-    link: "www.indiarunning.com",
+    link: "https://www.behance.net/gallery/185012941/Meterscan-Application",
     image: "/images/newwork1.svg",
     icon: "/icons/newwork1.svg",
     description:
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Life Drop",
     order: "02",
-    link: "www.indiarunning.com",
+    link: "https://www.behance.net/gallery/188265953/Life-Drop",
     image: "/images/newwork2.svg",
     icon: "/icons/newwork2.svg",
     description:
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Monkey Space",
     order: "03",
-    link: "www.indiarunning.com",
+    link: "https://www.behance.net/gallery/185191653/Monkey-Space-DJ-Website",
     image: "/images/newwork3.svg",
     icon: "/icons/newwork3.svg",
     description:
@@ -68,7 +68,10 @@ export default function SelectedWork({ ref }: Props) {
   }, [activeIndex]);
 
   return (
-    <div className="bg-black pt-20 flex flex-col gap-[66px] sm:gap-[120px]">
+    <div
+      className="bg-black pt-20 flex flex-col gap-[66px] sm:gap-[120px]"
+      ref={ref}
+    >
       <div className="justify-center flex items-center flex-col sm:gap-[28px] gap-5">
         <p className="font-semibold text-2xl md:text-[32px] text-white">
           Selected work

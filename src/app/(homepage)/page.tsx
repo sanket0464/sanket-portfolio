@@ -17,7 +17,7 @@ const Homepage = () => {
   return (
     <div className="bg-[#FFFDF8]">
       <Navbar infoRef={infoRef} workRef={workRef} aboutRef={aboutRef} />
-      <InfoSection ref={infoRef} />
+      <InfoSection ref={infoRef} selectedWorkRef={workRef} />
       <SelectedWork ref={workRef} />
       <ExpertiesSection />
       <AboutSection ref={aboutRef} />

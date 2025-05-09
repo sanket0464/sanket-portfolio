@@ -1,11 +1,11 @@
 const Footer = () => {
   return (
     <div className="flex flex-col bg-black sm:px-16 sm:py-16 px-4 py-4 sm:gap-16 gap-10 bg-[url(/images/footer-background-mobile.svg)] sm:bg-[url(/images/footer-background-desktop.svg)] bg-cover bg-no-repeat sm:bg-contain">
-      <div className="flex flex-col sm:flex-row gap-[96px] sm:gap-0 pt-[80px] sm:pt-0 justify-between w-full px-[2%]">
-        <div className="flex justify-center gap-2 sm:max-w-[350px]  w-full items-center">
-          <img src="/icons/star.svg" alt="" />
+      <div className="flex flex-col sm:flex-row gap-[96px] sm:gap-0 pt-[80px] sm:pt-0 justify-between w-full px-[5%]">
+        <div className="flex justify-center gap-2 sm:max-w-[350px] text-[32px]  w-full items-center">
+          <img src="/icons/star.svg" alt="" className="w-8 h-8" />
           <p className="bg-gradient-to-r from-[#FFB800] to-[#FFFFFF] bg-clip-text text-transparent text-2xl font-medium">
-            I do magic in pixels...
+            <span className="font-medium">I do Magic</span> in pixels...
           </p>
         </div>
         <div className="flex flex-col gap-4 max-w-[640px]">
@@ -33,16 +33,29 @@ const Footer = () => {
         </p>
         <div className="flex gap-5">
           <div>
-            <img src="/logos/gmail.svg" alt="" />
+            <a href="mailto:sanketpatekar85540@gmail.com" target="_blank">
+              <img src="/logos/gmail.svg" alt="" />
+            </a>
           </div>
           <div>
+            <a
+              href="https://www.linkedin.com/in/sanket-patekar-411599250/"
+              target="_blank"
+            ></a>
             <img src="/logos/linkedIn.svg" alt="" />
           </div>
           <div>
-            <img src="/logos/behance.svg" alt="" />
+            <a href="https://www.behance.net/sanketpatekar1" target="_blank">
+              <img src="/logos/behance.svg" alt="" />
+            </a>
           </div>
           <div>
-            <img src="/logos/instagram.svg" alt="" />
+            <a
+              href="https://www.instagram.com/_sanket_patekar_/?igsh=NWp0bGVqaHc4ZTdz&utm_source=qr#"
+              target="_blank"
+            >
+              <img src="/logos/instagram.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>

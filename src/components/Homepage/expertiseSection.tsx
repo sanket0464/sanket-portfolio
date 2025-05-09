@@ -45,12 +45,17 @@ const ExpertiesSection = () => {
               Learn more about my skills, experience and achievements.
             </p>
           </div>
-          <div className="flex gap-2.5 bg-[#FFB800] py-2.5 sm:py-[15px] px-4 sm:px-6 rounded-xl  sm:rounded-2xl w-max items-center text-center mx-auto hover-gradient active:sm:px-4 active:px-3">
-            <p className="font-semibold text-sm sm:text-lg text-[#141414]">
-              My Resume
-            </p>
-            <img src="/icons/arrow-top-black.svg" alt="" />
-          </div>
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/u/0/d/1zd0m1w1HSrEQT-FtKAV2QdxqL7J_JInt/view?usp=drive_link"
+          >
+            <div className="flex gap-2.5 bg-[#FFB800] py-2.5 sm:py-[15px] px-4 sm:px-6 rounded-xl  sm:rounded-2xl w-max items-center text-center mx-auto hover-gradient active:sm:px-4 active:px-3">
+              <p className="font-semibold text-sm sm:text-lg text-[#141414]">
+                My Resume
+              </p>
+              <img src="/icons/arrow-top-black.svg" alt="" />
+            </div>
+          </a>
         </div>
       </div>
     </div>
