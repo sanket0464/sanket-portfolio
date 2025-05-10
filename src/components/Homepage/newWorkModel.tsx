@@ -42,7 +42,7 @@ const Section = ({
               className="underline decoration-[#FFB800]"
             >
               <p className="text-[#FFB800] font-normal text-base flex gap-1">
-                view case study{" "}
+                View case study{" "}
                 <img
                   src="/icons/arrow-top.svg"
                   alt=""
