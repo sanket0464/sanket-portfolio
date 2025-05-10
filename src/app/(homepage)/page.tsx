@@ -31,7 +31,7 @@ const Homepage = () => {
           alt=""
           className="w-[76px] aspect-square"
         />
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 xl:hidden">
           <p className="text-sm text-black text-center">
             This view is currently unavailable on Mobile
           </p>
