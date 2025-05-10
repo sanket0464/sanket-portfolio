@@ -25,13 +25,13 @@ const Homepage = () => {
         <Testimonials />
         <Footer />
       </div>
-      <div className="w-screen h-screen flex flex-col justify-center items-center gap-[32px]">
+      <div className="w-screen h-screen flex flex-col justify-center items-center gap-[32px]  xl:hidden">
         <img
           src="/logos/mobileLogo.svg"
           alt=""
           className="w-[76px] aspect-square"
         />
-        <div className="flex flex-col gap-6 xl:hidden">
+        <div className="flex flex-col gap-6">
           <p className="text-sm text-black text-center">
             This view is currently unavailable on Mobile
           </p>
