@@ -19,7 +19,7 @@ const InfoSection = ({ ref, selectedWorkRef }: Props) => {
   });
   return (
     <div
-      className="w-full flex flex-col justify-center sm:px-[120px] pt-[120px] pb-8 gap-24 overflow-hidden"
+      className="w-full flex flex-col justify-center sm:px-[120px] pt-[124px] pb-8 gap-[100px] overflow-hidden"
       ref={ref}
     >
       <div className="flex sm:flex-row  flex-col-reverse  justify-between items-center  bg-[FFFDF8]">
@@ -74,7 +74,7 @@ const InfoSection = ({ ref, selectedWorkRef }: Props) => {
       </div>
       <div className="flex flex-col items-center">
         <div>
-          <p className="text-[#A8A8B8] font-light text-xl text-center">
+          <p className="text-[#A8A8B8] font-light sm:text-base text-sm text-center leading-[120%]">
             Brands I've worked with
           </p>
         </div>

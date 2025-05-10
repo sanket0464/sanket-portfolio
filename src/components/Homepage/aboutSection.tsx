@@ -48,7 +48,7 @@ const AboutSection = ({ ref }: Props) => {
         <div className="sm:w-1/2 flex justify-center items-center relative  w-[90%] mx-auto pt-2.5 sm:pl-[60px]">
           {/* First Image */}
 
-          <div className="sm:w-[204px] sm:h-[245px] w-[147.60px] h-[177.13px] bg-gray-300 rounded-xl shadow-lg rotate-0 border-[#1C1C1C] border-[6px] left-12 top-12 drop-shadow-2xl overflow-hidden">
+          <div className="sm:w-[204px] sm:h-[245px] w-[147.60px] h-[177.13px] bg-gray-300 rounded-xl shadow-[10px_10px_0_0_#000000] rotate-0 border-[#1C1C1C] border-[6px] left-12 top-12 drop-shadow-2xl overflow-hidden">
             <img
               src="/images/about1.svg"
               alt=""
@@ -56,7 +56,7 @@ const AboutSection = ({ ref }: Props) => {
             />
           </div>
           {/* Second Image - Rotated */}
-          <div className="sm:w-[204px] sm:h-[245px] w-[147.60px] h-[177.130px] bg-gray-300 rounded-xl shadow-[10px_10px_0_0_#000000] border-[#1C1C1C] border-[6px]  -rotate-[11.06deg] sm:left-60 mt-[-40px] ml-[-16px] drop-shadow-2xl overflow-hidden z-10">
+          <div className="sm:w-[204px] sm:h-[245px] w-[147.60px] h-[177.130px] bg-gray-300 rounded-xl shadow-[10px_10px_0_0_#000000] border-[#1C1C1C] border-[6px]  -rotate-[11.06deg] sm:left-60 mt-[-70px] ml-[-16px] drop-shadow-2xl overflow-hidden z-10">
             <img
               src="/images/about2.svg"
               alt=""
@@ -71,13 +71,14 @@ const AboutSection = ({ ref }: Props) => {
         </div>
       </div>
 
-      <div className="flex sm:gap-[60px] gap-[42px] flex-col sm:px-[80px]0 sm:pb-[64px] ">
+      <div className="flex sm:gap-[60px] gap-[42px] flex-col sm:px-[80px] sm:pb-[68px] ">
         <div className="flex justify-center gap-2">
           <img src="/icons/star.svg" alt="" />
           <p className="bg-gradient-to-r from-[#FFB800] to-[#FFFFFF] bg-clip-text text-transparent">
             BECAUSE THERE'S MUCH MORE TO LIFE
           </p>
         </div>
+
         <ImageSlider images={images} />
       </div>
     </div>

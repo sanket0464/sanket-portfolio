@@ -26,16 +26,16 @@ const ImageSlider = ({ images }: Props) => {
 
   return (
     <div className="overflow-hidden" ref={emblaRef}>
-      <div className="flex gap-8">
+      <div className="flex flex-shrink-0 py-[10px]">
         {images.map((image: any, index) => (
           <div
             key={index}
-            className="w-[204px] h-[245px] flex-shrink-0 rounded-xl shadow-lg border-[#1C1C1C] border-[6px] drop-shadow-2xl"
+            className="flex w-[204px] h-[245px] flex-shrink-0 overflow-hidden  rounded-xl border-[#1C1C1C] border-[6px] drop-shadow-2xl mx-[16px] shadow-[10px_10px_0_0_#000000]"
           >
             <img
               src={image.url}
               alt=""
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover rounded-xl shadow-[10px_10px_0_0_#000000"
             />
           </div>
         ))}

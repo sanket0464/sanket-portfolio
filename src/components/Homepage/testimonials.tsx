@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Testimonial from "./testimonial";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css/navigation";
 import "swiper/css";
@@ -32,7 +32,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="sm:py-20 flex flex-col gap-[112px] justify-center items-center bg-[#FFFDF8]">
-      <div className="flex flex-col gap-7 sm:gap-[80px] overflow-hidden">
+      <div className="flex flex-col gap-7 sm:gap-[64px]">
         <div className="flex flex-col sm:gap-6 gap-5 text-center">
           <p className="font-semibold sm:text-black sm:text-[32px] text-[24px] leading-[120%]">
             What others have to say
@@ -49,7 +49,8 @@ const Testimonials = () => {
             centeredSlides={true}
             // loop={true} // Optional: infinite loop
 
-            className="testimonial-swiper !bg-[#FFFDF8]"
+            className="testimonial-swiper !bg-[#FFFDF8]
+"
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index} className="!bg-[#FFFDF8]">
@@ -63,28 +64,44 @@ const Testimonials = () => {
             ))}
           </Swiper>
         </div>
-        <div className="max-w-[1200px] bg-[#FFFDF8] hidden sm:flex w-full">
-          <Swiper
-            spaceBetween={20}
-            grabCursor={true}
-            slidesPerView={2}
-            allowTouchMove={true}
-            simulateTouch={true}
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
-            className="max-w-full !overflow-visible"
-          >
-            {testimonials.map((testimonial, index) => (
-              <SwiperSlide key={index} className="!bg-[#FFFDF8]">
-                <Testimonial
-                  description={testimonial.description}
-                  image={testimonial.image}
-                  name={testimonial.name}
-                  position={testimonial.position}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        {/* bg-[#FFFDF8] */}
+        <div className="hidden sm:flex justify-center items-center w-full relative">
+          <div
+            className="absolute w-[598px] h-[70%] mt-[70px] top-auto bottom-auto z-[30] scale-[104%] bg-[#F7F7F7] bg-opacity-100 shadow-[0px_4px_64px_0px_#00000014]
+  rounded-[16px]"
+          ></div>
+          <div
+            className="absolute w-[608px] h-[60%] mt-[80px] top-auto bottom-auto z-[20] scale-[107%] bg-[#F3F3F3] bg-opacity-100 shadow-[0px_4px_64px_0px_#00000014]
+  rounded-[16px]"
+          ></div>
+          <div className="bg-[#FFFDF8] w-[588px]  pt-[80px] overflow-hidden">
+            <Swiper
+              spaceBetween={0}
+              grabCursor={true}
+              slidesPerView={1}
+              autoplay={{ delay: 5000, disableOnInteraction: false }}
+              allowTouchMove={true}
+              simulateTouch={true}
+              modules={[Autoplay]}
+              loop
+              pagination={{ clickable: true }}
+              className="w-full !overflow-visible !z-[90]"
+            >
+              {testimonials.map((testimonial, index) => (
+                <SwiperSlide
+                  key={index}
+                  className="!bg-[#FFFDF8] !rounded-[16px]"
+                >
+                  <Testimonial
+                    description={testimonial.description}
+                    image={testimonial.image}
+                    name={testimonial.name}
+                    position={testimonial.position}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>

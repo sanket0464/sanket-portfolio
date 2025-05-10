@@ -10,25 +10,25 @@ const ExpertiesSection = () => {
             </p>
           </div>
           <div className="sm:grid sm:grid-cols-2 flex flex-col justify-center items-center gap-6  w-full px-[18px] place-items-center max-w-fit">
-            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:max-w-[484px] w-full bg-white">
+            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:w-[440px] w-full bg-white">
               <img src="/logos/exp-1.svg" alt="" />
               <p className="sm:text-xl text-sm text-[#172B4D] font-normal">
                 User Experience (UX) Design
               </p>
             </div>
-            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:max-w-[484px] w-full bg-white">
+            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:w-[440px] w-full bg-white">
               <img src="/logos/exp-2.svg" alt="" />
               <p className="sm:text-xl text-sm  text-[#172B4D] font-normal">
                 User Interface (UI) Design
               </p>
             </div>
-            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:max-w-[484px] w-full bg-white">
+            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:w-[440px] w-full bg-white">
               <img src="/logos/exp-3.svg" alt="" />
               <p className="sm:text-xl text-sm text-[#172B4D] font-normal">
                 Micro interactions
               </p>
             </div>
-            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:max-w-[484px] w-full bg-white">
+            <div className="flex items-center rounded-[20px] border border-[#EEEEEE] h-[96px] p-6 gap-5 xl:w-[440px] w-full bg-white">
               <img src="/logos/exp-4.svg" alt="" />
               <p className="sm:text-xl text-sm  text-[#172B4D] font-normal">
                 User research

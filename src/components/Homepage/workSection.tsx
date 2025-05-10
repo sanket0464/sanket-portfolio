@@ -15,7 +15,7 @@ const projects = [
     description:
       "Designed an app to simplify utility billing, generating bills and processing payments with a seamless, user-friendly experience.",
     appType: "Mobile App",
-    color: "#0027FF26",
+    color: "#121733",
   },
   {
     title: "Life Drop",
@@ -26,7 +26,7 @@ const projects = [
     description:
       "A blood donation app that connects donors with recipients and helps users find nearby campaigns, ensuring quick support during emergencies.",
     appType: "Mobile App",
-    color: "#FF00371A",
+    color: "#291317",
   },
   {
     title: "Monkey Space",
@@ -37,7 +37,7 @@ const projects = [
     description:
       "Designed a website for a client to enhance their online presence, feature their music, expand their reach, and streamline event bookings.",
     appType: "Web App",
-    color: "#005DFF26",
+    color: "#121F34",
   },
 ];
 interface Props {
